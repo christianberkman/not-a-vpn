@@ -2,21 +2,16 @@
 Bash script to manage a not-a-vpn via sshuttle
 
 ## Setting variables
-`USER` SSH username on the remote host
-
-`HOST` remote SSH host
-
-`POST` remote SSH port
-
-`SUBNETS` subnets to route through the not-a-vpn. 0/0 will route all traffic
-
-
-`OPTIONS` options for the sshuttle command
-
-`OPTIONS_ALT` alternative options for the sshuttle command, for example to also route traffic from connected machines using `-l 0.0.0.0:0`
-
+`USER` SSH username on the remote host 
+`HOST` remote SSH host 
+`POST` remote SSH port 
+`SUBNETS` subnets to route through the not-a-vpn. 0/0 will route all traffic 
+ 
+`OPTIONS` options for the sshuttle command 
+`OPTIONS_ALT` alternative options for the sshuttle command, for example to also route traffic from connected machines using `-l 0.0.0.0:0 
+ 
 The script creates the `REMOTE` variable automatically to pass to the `sshuttle -r` switch
-
+ 
 ## Modes
 ### not-a-vpn.sh start
 Start sshuttle in deamon mode, using the options in `OPTIONS`
