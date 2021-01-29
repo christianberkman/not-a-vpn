@@ -15,7 +15,7 @@ Available config options:
 * `POST` remote SSH port
 * `SUBNETS` subnets to route through the not-a-vpn. 0/0 will route all traffic
 * `OPTIONS` options for the sshuttle command
-* `OPTIONS_ALT` alternative options for the sshuttle command, for example to also route traffic from connected machines using `-l 0.0.0.0:0
+* `OPTIONS_ALT` alternative options for the sshuttle command, for example to also route traffic from connected machines using `-l 0.0.0.0:0`
  
 The script creates the `REMOTE` variable automatically to pass to the `sshuttle -r` switch
  
@@ -37,5 +37,3 @@ Check if the sshuttle deamon is running by finding its PID from `sshuttle.pid`
 
 ### not-a-vpn.sh stop
 Stop the sshuttle deamon by finding its PID from `sshuttle.pid` and killing the process.
-
-
