@@ -1,5 +1,5 @@
 # not-a-vpn
-Bash script to manage a not-a-vpn via shuttle
+Bash script to manage a not-a-vpn via sshuttle
 
 ## Setting variables
 `USER` SSH username on the remote host
