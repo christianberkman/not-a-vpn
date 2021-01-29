@@ -7,7 +7,8 @@
 # Bash Script to manage not-a-vpn via sshuttle
 #
 
-# COnfig
+# Config
+cd $(cd `dirname $0` && pwd)
 source not-a-vpn-config.sh
 REMOTE="$USER@$HOST:$PORT $SUBNETS"
 
@@ -43,7 +44,7 @@ echo -e "${BLINK}Not${RESET} a VPN via ${BOLD}sshuttle${RESET}"
 echo
 echo -e "Remote:\t\t\t${BOLD}${REMOTE}${RESET}"
 echo -e "Options:\t\t${BOLD}${OPTIONS}${RESET}"
-echo -e "Extra options:\t\t${BOLD}${OPTIONS_ALT}${RESET}"
+echo -e "Alt options:\t\t${BOLD}${OPTIONS_ALT}${RESET}"
 echo $LINE
 echo
 
