@@ -1,5 +1,5 @@
 # not-a-vpn
-Bash script to manage a not-a-vpn via sshuttle
+Bash script to manage a shuttle connection. It is not-a-vpn. 
 
 ## Requirements
 * [sshuttle](https://github.com/sshuttle/sshuttle) installed on the client
