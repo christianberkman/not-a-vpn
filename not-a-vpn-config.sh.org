@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#
+# Copyright (c) 2021 christianberkman
+# Released under MIT License
+#
+# Bash Script to manage not-a-vpn via sshuttle
+# Config script
+#
+
+# Edit your settings here
+USER="USERNAME"
+HOST="HOST"
+PORT="PORT"
+SUBNETS="0/0" # 0/0 to route all traffic
+
+OPTIONS="-N -x $HOST" 
+OPTIONS_ALT="-N -x $HOST -l 0.0.0.0:0 --no-latency-control" # alternative options. e.g. route traffic from other machines as well (hotspot)

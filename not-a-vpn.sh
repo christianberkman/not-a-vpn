@@ -7,18 +7,9 @@
 # Bash Script to manage not-a-vpn via sshuttle
 #
 
-# Edit your settings here
-USER="USERNAME"
-HOST="HOST"
-PORT="22"
-SUBNETS="0/0" # 0/0 to route all traffic
-
-OPTIONS="-N -x $HOST" 
-OPTIONS_ALT="-N -x $HOST -l 0.0.0.0:0" # alternative options. e.g. route traffic from other machines as well (hotspot)
-
+# COnfig
+source not-a-vpn-config.sh
 REMOTE="$USER@$HOST:$PORT $SUBNETS"
-
-#-------- NO NEED TO EDIT BELOW THIS LINE --------# 
 
 # Formatting vars
 BLINK="\e[5m"

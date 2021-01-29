@@ -1,14 +1,21 @@
 # not-a-vpn
 Bash script to manage a not-a-vpn via sshuttle
 
-## Setting variables
-`USER` SSH username on the remote host  
-`HOST` remote SSH host  
-`POST` remote SSH port  
-`SUBNETS` subnets to route through the not-a-vpn. 0/0 will route all traffic  
- 
-`OPTIONS` options for the sshuttle command  
-`OPTIONS_ALT` alternative options for the sshuttle command, for example to also route traffic from connected machines using `-l 0.0.0.0:0  
+## Requirements
+* [sshuttle](https://github.com/sshuttle/sshuttle) installed on the client
+* sudo access on the client
+* ssh access to the server
+
+## Configuration
+Copy the sample config file to be customized with `cp not-a-vpn-config.sh.org not-a-vpn-config.sh`\
+Available config options:
+
+* `USER` SSH username on the remote host\
+* `HOST` remote SSH host\
+* `POST` remote SSH port\
+* `SUBNETS` subnets to route through the not-a-vpn. 0/0 will route all traffic\
+* `OPTIONS` options for the sshuttle command\
+* `OPTIONS_ALT` alternative options for the sshuttle command, for example to also route traffic from connected machines using `-l 0.0.0.0:0\
  
 The script creates the `REMOTE` variable automatically to pass to the `sshuttle -r` switch
  
